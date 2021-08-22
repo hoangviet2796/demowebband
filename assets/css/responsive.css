@@ -1,0 +1,115 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Tablet và mobile */
+@media (max-width: 1023px) {
+    .buy_button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .address .form_control {
+        padding: 12px;
+    }
+
+    #footer i[class*="ti-"] {
+        padding: 5px
+    }
+
+    .powered a {
+        padding: 10px 0px;
+        display: inline-block;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile_menu {
+        display: block;
+    }
+    #header .search_icon {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav a {
+        color: white;
+        padding: 0px 41px;
+    }
+
+    #slider .title_content {
+        display: none;
+    }
+
+    #content .member {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;        
+    }
+
+    .place_item {
+        width: 100%;
+        background-color: black;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 16px;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .row1 {
+        display: block;
+    }
+
+    .name_email {
+        width: 100%;
+        padding: 5px 8px;
+    }
+
+    .row2 {
+        display: inline-block;
+        width: 100%;
+        padding-top: 5px
+    }
+
+    .contact_info {
+        margin-bottom: 16px;
+    }
+
+    .send_btn {
+        width: 100%;
+    }
+
+
+}

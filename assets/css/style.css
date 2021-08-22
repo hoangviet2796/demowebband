@@ -1,0 +1,400 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+1.Từ ngoài vào trong
+2.Từ trên xuống dưới
+3.Tổng quan đến chi tiết */
+
+/* 
+1. Vị trí
+2. Kích thước (withd, height)
+3. Màu sác
+4. Kiểu dáng (hình tròn, kiểu chữ,...)
+ */
+
+.clear {
+    clear: both;
+}
+
+.text_white {
+    color: white!important;
+}
+
+#header {
+    height: 46px;
+    background-color:black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav > li:hover > a {
+    width: 100%;
+    color: black;
+    background-color: grey;
+}
+
+#nav .down{
+    font-size: 12px;
+}
+
+#header .mobile_menu {
+    position: absolute;
+    font-size: 16px;
+    right: 0px;
+    top: 0px;
+    display: none;
+}
+
+#header .search{
+    float: right;
+    position: relative;
+    font-size: 16px;
+    right: 0px;
+}
+
+#header .menu_icon,
+#header .search_icon{
+    color: white;
+    line-height: 46px;
+    padding: 1rem 18px;
+}
+
+#header .search:hover .search_icon{
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+#header .mobile_menu:hover .menu_icon{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#nav .subnav {
+    display: none;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 .5rem 1rem grey;
+}
+
+#nav .subnav li{
+    width: 100%;
+}
+
+#nav .subnav a {
+    display: block;
+    padding: 0 30px;
+    width: 100%;
+    color: black;
+}
+
+
+#slider {
+    position:relative;
+}
+
+.slide {
+    display: none;
+}
+
+#slider .title_content {
+    position: absolute;
+    bottom: 47px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 0 0 1px black;
+}
+#slider .title {
+    text-transform: uppercase;
+    font-size: 24px ;
+    font-weight: 500;
+
+}
+#slider .title_text {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+#content .content_section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    
+}
+
+#content .title_section {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#content .subtitle_section {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .text_section {
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#content .team {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    /* sửa lỗi class member bị co lại khi dùng float 
+    overflow: hidden; */
+}
+
+#content .member {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+    
+}
+
+#content .member_name {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#content .member_img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+/*tour section */
+
+.tour {
+    background-color: black;
+}
+
+.ticket_list {
+    margin-top: 40px;
+    list-style: none;
+    background-color: white;
+}
+
+.ticket_list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket_list .sold_out {
+    background-color: tomato;
+    padding: 3px 4px;
+    margin-left: 16px;
+    color: white;
+
+}
+
+.ticket_list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.place_list {
+    margin: 0px -16px;
+    padding : 32px 8px;   
+}
+
+.place_item {
+    float: left;
+    width: 33.33333%;
+    background-color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+}
+
+.Place_img {
+    width: 100%;
+    display: block;
+}
+
+.Place_img:hover {
+    opacity: 0.6;
+}
+
+.place_body {
+    background-color: white;
+    padding: 15px 16px 16px;
+    font-size: 15px;
+    font-family: "Lato" sans-serif;
+}
+
+.place_heading {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+
+}
+
+.place_time {
+    line-height: 1.5;
+    opacity: 0.6;
+    margin-top: 15px;
+}
+
+.place_describ {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.buy_button {
+    text-decoration: none;
+    padding: 11px 16px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.buy_button:hover {
+    color: black;
+    background-color: grey
+}
+
+.address_section {
+    padding: 32px 0px;
+}
+
+.address {
+    width: 50%;
+    float: left;
+    font-size: 18px;
+}
+
+.contact_info {
+    line-height: 1.5;
+}
+
+.contact_info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.row1 {
+    margin: 0px -8px 8px -8px;
+    display: inline-block;
+}    
+
+.name_email {
+    float: left;
+    width: 50%;
+    padding: 0px 8px;
+}
+
+.address .form_control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.send_btn {
+    float: right;
+    text-decoration: none;
+    padding: 11px 16px;
+    color: white;
+    background-color: black;
+    display: block;
+    margin: 16px 0px;
+    border: 1px solid #000;
+    -webkit-appearance: none;
+}
+
+.send_btn:hover {
+    color: black;
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+.map {
+    filter: grayscale(50%);
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.powered {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 15px;
+    color: grey;
+}
+
+#footer i[class*="ti-"] {
+    opacity: 0.6;
+    font-size: 24px;
+}
+
+#footer i[class*="ti-"]:hover {
+    opacity: 0.5;
+}
+
+.powered a {
+    text-decoration: none;
+    color: grey;
+}
