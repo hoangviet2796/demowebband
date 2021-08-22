@@ -388,6 +388,7 @@ html {
 #footer i[class*="ti-"] {
     opacity: 0.6;
     font-size: 24px;
+    cusor:pointer;
 }
 
 #footer i[class*="ti-"]:hover {
